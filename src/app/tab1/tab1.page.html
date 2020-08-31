@@ -13,5 +13,11 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <form [formGroup]="form" (ngSubmit)="submit(model)">
+    <formly-form [model]="model" [fields]="fields">
+      <button type="submit">Submit</button>
+    </formly-form>
+  </form>
+
+  {{ model|json }}
 </ion-content>
