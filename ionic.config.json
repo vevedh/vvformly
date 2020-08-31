@@ -1,0 +1,7 @@
+{
+  "name": "vvformly",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
